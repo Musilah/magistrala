@@ -11,7 +11,7 @@ on:
 jobs:
   lint-and-build: # Linting and building are combined to save time for setting up Go
     name: Lint and Build
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     continue-on-error: true
 
     steps:
@@ -39,7 +39,7 @@ jobs:
 
   run-tests:
     name: Run ${{ matrix.service.name }} Tests
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     continue-on-error: true
     strategy:
       matrix:        
