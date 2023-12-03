@@ -24,7 +24,7 @@ on:
 
 jobs:
   check-proto:
-    runs-on: [self-hosted, droplet1]
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
