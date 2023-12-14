@@ -173,6 +173,7 @@ func TestAdd(t *testing.T) {
 }
 
 func TestView(t *testing.T) {
+	
 	tsvc, gsvc, trepo, chrepo, auth := newThingsService()
 	ts := newThingsServer(tsvc, gsvc)
 	svc := newService(ts.URL, auth)
